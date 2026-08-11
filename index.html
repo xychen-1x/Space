@@ -210,7 +210,7 @@ function animate(){
   if(now-ft>=500){
     const fps=fc/((now-ft)/1000);
     document.getElementById("fps").textContent=fps.toFixed(0);
-    document.getElementById("stability").textContent=Math.min(100,fps/60*100).toFixed(2)+"%";
+    document.getElementById("stability").textContent=Math.min(200,fps/120*200).toFixed(2)+"%";
     document.getElementById("phase").textContent=Math.round(morph*100)+"%";
     document.getElementById("progress").style.transform=`scaleX(${morph})`;
     fc=0;ft=now;
